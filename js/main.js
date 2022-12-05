@@ -8,6 +8,7 @@ const screenshotButton = document.querySelector(".screenshot-container");
 const termsAndCondiions = document.querySelector("small");
 const instruction = document.querySelector(".instructions");
 
+const loading = document.querySelector(".loading");
 const start = document.querySelector(".start");
 const game = document.querySelector(".game");
 const startBtn = document.querySelector(".start-button");
@@ -25,6 +26,30 @@ var randomQn;
 var correctAnswer;
 //game ended?
 let ended = false;
+
+setTimeout(function() {
+    //your code to be executed after 1 second
+
+    document.body.style.display = "block"
+    onLoadSplash();
+
+}, 500);
+
+function onLoadSplash()
+{
+    console.log("Hi")
+    var delayInMilliseconds = 2000;
+    setTimeout(function() {
+        //your code to be executed after 1 second
+        console.log("test")
+        loading.classList.add("fade");
+        var delayInMilliseconds = 2000;
+        setTimeout(function() {
+            //your code to be executed after 1 second
+            loading.classList.add("hide")
+        }, delayInMilliseconds);
+    }, delayInMilliseconds);
+}
 
 class Question {
     constructor(question, answer) {
