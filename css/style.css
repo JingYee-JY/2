@@ -486,6 +486,10 @@ small{
         background: white;
         z-index: 10000;
     }
+
+    .header{
+        z-index: 10000;
+      }
 }
 
 .rotate-container{
