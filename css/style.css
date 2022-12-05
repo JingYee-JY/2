@@ -115,7 +115,7 @@ body {
 
 .load_image{
     position: relative;
-    height: 300px;
+    height: auto;
     width: 200px;
     z-index: 100;
 }
