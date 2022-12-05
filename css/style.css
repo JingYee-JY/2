@@ -1,0 +1,468 @@
+@font-face {
+    font-family: 'VAG Rounded';
+    src: url('../assets/fonts/VAGRounded-Light.woff2') format('woff2'),
+        url('../assets/fonts/VAGRounded-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VAGRounded';
+    src: url('../assets/fonts/VAGRounded-Light-Italic.woff2') format('woff2'),
+        url('../assets/fonts/VAGRounded-Light-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VAG Rounded';
+    src: url('../assets/fonts/VAG-Rounded-Bold.woff2') format('woff2'),
+        url('../assets/fonts/VAG-Rounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'VAG Rounded', cursive;
+}
+
+html{
+    -webkit-text-size-adjust: 100%;
+}
+
+/*change font here ^*/
+/* change background inside body */
+body {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 1;
+    bottom: 0;
+}
+
+.bottom-background {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+    max-height: 350px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: 10px 0;
+    border-top: 1px solid #C1C1C1;
+    border-bottom: 1px solid #C1C1C1;
+    background-color: white;
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 126px;
+}
+
+.close {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-10%, -50%);
+    color: #CE0E2D;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.description-container {
+    border: 0px solid #CE0E2D;
+    background-color: #CE0E2D;
+    width: calc(100% - 20%);
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+.game-img{
+    line-height: 0;
+}
+
+.game-img img {
+
+    width: 100%;
+    height: auto;
+    padding: 3px;
+    box-sizing: border-box;
+
+}
+
+.game-description {
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.game-description p {
+    color: #E8E8E8;
+    margin: 0;
+    line-height: 1.2em;
+}
+
+.game-description p {
+    text-align: initial;
+}
+
+.game-description h3{
+    margin-top: 0;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.answer{
+    /* max-width: 90%; */
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.answer img{
+    max-width: 158px;
+}
+
+.options{
+    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    justify-items: center;
+    align-self: center;
+}
+
+button {
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.3em 0.7em;
+}
+
+.hide {
+    display: none !important;
+    visibility: hidden;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.start,
+.game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+
+.end {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+
+
+.title {
+    margin: 50px auto;
+    width: 60%;
+    height: auto;
+}
+
+.game-title {
+    margin: 20px 0;
+    z-index: 10;
+    height: auto;
+}
+
+.start-container,
+.instructions {
+    text-align: center;
+}
+
+.start-button{
+    background-color: transparent;
+    border: 0px;
+    width: 100%;
+    padding: 2.5% 5%;
+    cursor: pointer;
+}
+
+.startbtn{
+    max-width: 80%;
+}
+
+.screenshot-container {
+    margin: 0 5%;
+    margin-top: 1em;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenshot-container img{
+    max-width: 44px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.screenshot-container p{
+    color: white;
+    margin: 0;
+    font-size: 14px;
+}
+small{
+    text-align: center;
+    color: #CE0E2D;
+    margin-top: 10px;
+    font-size: 8px;
+    margin:5px;
+    padding-bottom: 10px;
+}
+
+.resultText {
+
+    background-color: #CE0E2D;;
+    margin-top: 10px;
+    padding: 26px;
+    color: white;
+    box-shadow: 0px 8px transparent !important;
+}
+
+.arrowHead {
+    margin-right: 10px;
+    max-width: 15px;
+}
+
+
+.instruction-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    color: white;
+}
+
+
+.instruction-container {
+    font-size: 50px;
+    padding: 20px 40px;
+    z-index: 10;
+}
+
+.end-container{
+    margin: 0 20px;
+}
+
+.end-message h2{
+    margin: 25px 0 25px 0;
+    font-size: 40px;
+    text-align: center;
+    color: #CE0E2D;
+}
+
+.info-container{
+    padding: 0 20px;
+}
+
+.art-title {
+    color: #CE0E2D;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 1em;
+}
+
+.art-info {
+    font-weight: 300;
+}
+
+.art-artist {
+    color: #CE0E2D;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+/*mobile*/
+@media screen and (max-width: 767px) {
+
+    .start-button {
+        width: calc(100% - 10px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .instruction-container {
+        font-size: 20px;
+    }
+}
+
+/*ipad*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    body {
+        width: 100%;
+    }
+
+    .start,
+    .game {
+        left: 0;
+        right: 0;
+    }
+
+    .start-button {
+        max-width: 350px;
+    }
+
+    .instruction-container {
+        font-size: 50px;
+    }
+}
+
+/*desktop*/
+@media screen and (min-width:1200px) {
+    body {
+        width: 100%;
+    }
+
+    .start,
+    .game,
+    .game-container,
+    .video-container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .start,
+    .end,
+    .game {
+        left: 0;
+        right: 0;
+    }
+
+    .instruction-container {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .endTitle {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (orientation:portrait){
+    body{
+        max-width: 350px;
+        max-height: 750px;
+        left: 50%;
+        transform:translateX(-50%);
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+    .game-title{
+        margin: 40px 0;
+    }
+    .description-container{
+        margin-bottom: 40px;
+    }
+}
+
+
+.owl-dot.active span{
+    background: #CE0E2D!important;
+}
+.owl-theme .owl-nav.disabled+.owl-dots{
+  margin-top: 0px!important;
+}
+
+.owl-carousel{
+    position: relative;
+}
+.owl-dots{
+    visibility: hidden;
+    display: flex;
+    margin: 0 auto;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-150%);
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots{
+    max-width: 20px;
+}
+
+
+/*splash screen*/
+
+.splash{
+    display: none;
+}
+
+@media (orientation:landscape) and (max-width: 991px) {
+
+    .start, .game, .end, .close, .bottom-background, .background{
+        visibility: hidden;
+    }
+
+    
+    .splash{
+        display: block;
+        position: fixed;
+        width: 100%;
+    }
+}
+
+.rotate-container{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+}
+
+.rotate-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.rotate-text{
+    font-weight: bold;
+    font-size: 24px;
+    color: #ce0e2d;
+    text-align: center;
+}
+
+.rotate{
+    max-width: 20%;
+    margin-top: 15px;
+}

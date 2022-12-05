@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W621QMSVC2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W621QMSVC2');
+</script>
+	
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap">
+    <link rel="stylesheet" href="./assets/fonts/VAGRoundedBT-Regular.otf">
+    <link rel="stylesheet" href="./assets/fonts/VAGRounded-Light Italic Regular.ttf">
+    <link rel="stylesheet" href="./assets/fonts/VAG Rounded Bold.ttf">
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.4/html2canvas.min.js"></script>
+
+    <title>National Gallery Singapore - River Search</title>
+</head>
+<body>
+    <img class="background" src="./assets/img/Frame.png" alt="">
+    <img class="bottom-background" src="./assets/img/bottom.png" alt="">
+
+    <!--header + logo-->
+    <div class="header">
+        <img class ="logo" src="./assets/img/logo.jpg">
+        <div class="close hide">
+            <img src="./assets/img/close.png" alt="" style="max-width: 50px;">
+        </div>
+    </div>
+
+
+    <!-- splash screen-->
+    <div class="splash">
+        <div class="rotate-container">
+            <div class="rotate-div">
+                <div class="rotate-text">For the best experience, please<br>rotate your phone vertically.</div>
+                <img class="rotate" src="./assets/img/rotate.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Main Menu-->
+    <div class="start">
+        <div class="start-container">
+            <div class="game-title">
+                <img src="./assets/img/title.png" alt="" style="max-width: 60%">
+            </div>
+            <div class="description-container">
+                <div class="game-img">
+                    <img src="./assets/img/Life By The River.jpg" alt="">
+                </div>
+                <div class="game-description">
+                    <h3>How to Play?</h3>
+                    <p>What's not happening in the painting? Look for it and tap the card.</p>
+                </div>
+            </div>
+        </div>
+    
+        <button class="start-button">
+            <img class="startbtn" src="./assets/img/start-button.png">
+        </button>
+    
+    </div>
+
+    <!--Game Screen-->
+
+    <div class="game hide">
+        <div class="instructions">Which scene is not found in the painting?</div>
+
+        <!--Fit the game items here-->
+
+        <div class="game-container">
+            <div class="options">
+                <div class="answer" id="" data-button="0"></div>
+                <div class="answer" id="" data-button="1"></div>
+                <div class="answer" id="" data-button="2"></div>
+                <div class="answer" id="" data-button="3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--End Screen-->
+
+    <div class="end hide">
+        <div class="end-message"></div>
+        <div class="end-container">
+            <div class="owl-carousel owl-theme">
+                <div class="">
+                    <img src="./assets/img/Life By The River.jpg">
+                    <div class="info-container">
+                        <div class="art-title">Life by the River</div>
+                        <div class="art-artist">Liu Kang</div>
+                        <p class="art-info">
+                            <i>Life by the River</i> portrays a typical scene of local village life in the 1970s near Pasir Panjang, located in the western part of Singapore. It was painted by Liu Kang, one of the most important pioneer artists in Singapore and a key figure of the Nanyang school of painting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+               
+        </div>
+
+        <div class="screenshot-container">
+            <img src="./assets/img/playagain.png" style="max-width: 300px;">
+        </div>
+        <small></small>
+    </div>   
+    
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+
+<script src="./js/main.js"></script>
+<script src="./js/carousel.js"></script>
+<script>w3.includeHTML();</script>
+</html>
