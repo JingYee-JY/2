@@ -94,7 +94,7 @@ body {
     height: 100%;
     z-index: 100;
     position: absolute;
-    background-color: #CE0E2D;
+    background: url(../assets/img/background.svg) center;
 }
 
 .load_div{
